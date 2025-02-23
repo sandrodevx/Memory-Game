@@ -1,0 +1,75 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif; /* Fuente */
+    background-color: #f4f4f4; /* Color de fondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centra verticalmente */
+    margin: 0;
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+    background-color: #fff; /* Fondo blanco */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilos del contador de movimientos y temporizador */
+.info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+/* Estilos del tablero de cartas */
+.board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px); /* 4 columnas de 100px */
+    grid-gap: 10px; /* Espacio entre cartas */
+    justify-content: center;
+}
+
+/* Estilos de las cartas */
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #28a745; /* Color verde */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la carta */
+    user-select: none; /* Evita que el texto se seleccione */
+}
+
+.card.flipped {
+    background-color: #218838; /* Color verde oscuro cuando está volteada */
+}
+
+.card.matched {
+    background-color: #ffc107; /* Color amarillo cuando las cartas coinciden */
+    cursor: default; /* Cursor normal cuando las cartas coinciden */
+}
+
+/* Estilos del botón de reiniciar */
+#reset {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #dc3545; /* Color rojo */
+    color: white;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 1rem;
+}
+
+#reset:hover {
+    background-color: #c82333; /* Color rojo oscuro al pasar el ratón */
+}
